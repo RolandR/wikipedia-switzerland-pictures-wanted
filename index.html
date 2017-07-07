@@ -1,0 +1,82 @@
+<!doctype html>
+
+<!--
+	========================================================================
+		
+	Copyright (C) 2017 Roland Rytz <roland@draemm.li>
+	Licensed under the GNU Affero General Public License Version 3
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Affero General Public License as
+	published by the Free Software Foundation, either version 3 of the
+	License, or (at your option) any later version.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+	
+	========================================================================
+-->
+
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Wikipedia-Bilderwünsche Schweiz
+		</title>
+
+		<meta name="author" content="Roland Rytz">
+		<meta name="robots" content="index, follow">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="./style.css?v=1" rel="stylesheet" type="text/css" media="all">
+	</head>
+
+
+	
+	<body>
+		<h1>Wikipedia-Bilderwünsche Schweiz</h1>
+
+		<div id="content">
+
+			<div id="settingsContainer">
+				<p>
+					Diese Karte verzeichnet Ortschaften der Schweiz, welche gemäss
+					<a href="https://de.wikipedia.org/wiki/Benutzer:Gestumblindi/Ort_ohne_Bilder" target="_blank">dieser Liste</a>
+					in der deutschsprachigen Wikipedia noch kein Bild haben.
+				</p>
+				<hr>
+				<p>
+					Total: <span id="totalCount">?</span> Orte<br>
+					Stand: 07. Juli 2017
+				</p>
+				<hr>
+				<div id="cantons"></div>
+				<div id="cantonsButtons">
+					<button id="allButton">Alle</button>
+					<button id="noneButton">Keine</button>
+				</div>
+			</div>
+
+			<div id="osmContainer">
+				<div id="osm"></div>
+			</div>
+
+		</div>
+		
+		<footer>
+			<p id="footer">von <a rel="author" target="_blank" href="http://draemm.li">Roland Rytz</a> - Quelltext unter der <a target="_blank" rel="license" href="./LICENSE">AGPL v3</a> auf <a target="_blank" href="https://github.com/RolandR/wp-schweiz-fotos">GitHub</a>. | 
+			Karte: © <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> Contributors.</p>
+		</footer>
+
+		<script type="text/javascript" src="./openlayers/ol.js"></script>
+		
+		<script type="text/javascript" src="./colorHash.js"></script>
+
+		
+		<script type="text/javascript" src="./coords.js?v=1"></script>
+		<script type="text/javascript" src="./map.js?v=1"></script>
+	</body>
+	
+</html>
+

@@ -1,0 +1,174 @@
+
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+html, body{
+	height: 100%;
+}
+
+body {
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+a{
+	cursor: pointer;
+	color: #FFAA00;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a#title:hover{
+	text-decoration: none;
+}
+
+a#title:hover > h1{
+	color: #FFAA00;
+}
+
+h1{
+	padding: 10px;
+	font-weight: 200;
+	color: #FFFFFF;
+	display: inline-block;
+	margin-right: 10px;
+	text-shadow: 2px 2px 0px #000000;
+}
+
+hr{
+	border-top: 1px #777777 solid;
+	margin: 5px 0px;
+}
+
+#infobox{
+	position: absolute;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer{
+	text-align: right;
+	padding: 10px;
+}
+
+button{
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+	background-color: #333333;
+	font-size: 16px;
+	color: #FFFFFF;
+	border: 1px #222222 solid;
+	cursor: pointer;
+	margin: 0px;
+	padding: 5px 15px;
+	display: inline-block;
+}
+
+button:hover{
+	background-color: #666666;
+}
+
+#content{
+	flex-grow: 1;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+#osmContainer{
+	padding: 0px 10px;
+	height: 100%;
+	flex-grow: 1;
+}
+
+#osm{
+	height: 100%;
+}
+
+#settingsContainer{
+	background-color: #444444;
+	width: 300px;
+	margin-left: 10px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+#addresses{
+	margin: 10px;
+	height: 200px;
+	width: 500px;
+}
+
+#cantons{
+	padding: 5px 10px;
+	flex-shrink: 1;
+	overflow-y: auto;
+	margin-top: 5px;
+}
+
+.canton{
+	display: block;
+	padding: 5px 5px;
+	cursor: pointer;
+}
+
+.canton:nth-child(even){
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+.canton:nth-child(even):hover{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.canton:nth-child(odd){
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.canton:nth-child(odd):hover{
+	background-color: rgba(255, 255, 255, 0.02);
+}
+
+#cantonsButtons{
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#cantonsButtons button{
+	flex-grow: 1;
+	flex-basis: 0px;
+	margin-right: 5px;
+}
+
+#cantonsButtons button:last-child{
+	margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
